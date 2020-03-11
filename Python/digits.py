@@ -1,12 +1,22 @@
-from math import pi,e,log,floor
+from math import log
 from sys import stdin
 
-def f(n):
-	if n > 2:
-		return 1+log(2*pi*n,10)/2+n*log(n/e,10)
-	else:
-		return 1
-
+outs = []
 for line in stdin:
-	x = int(line)
-	print(floor(f(x)))
+    line = line.strip()
+    if line == 'END':
+        break
+
+    n = len(line)
+
+    if line == '1':
+        outs.append('1')
+    elif n == 1:
+        outs.append('2')
+    elif n < 10:
+        outs.append('3')
+    else:
+        outs.append('4')
+
+
+print('\n'.join(outs))
