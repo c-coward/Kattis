@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Driver {
+public class DriversDilemma {
 	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 		float c = scan.nextFloat();
