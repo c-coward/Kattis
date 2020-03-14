@@ -1,17 +1,21 @@
-tests = int(input())
+def main():
+	t = int(input())
+	for _ in range(t):
+		input()
+		num_cs,num_econ = map(int,input().split())
+		
+		cs_students = list(map(int,input().split()))
+		econ_students = list(map(int,input().split()))
 
-for t in range(tests):
-	input()
-	Ncs,Ne = [int(i) for i in input().split()]
-	cs = [int(i) for i in input().split()]
-	e = [int(i) for i in input().split()]
-	cs.sort()
-	e.sort()
-	csA = sum(cs)/Ncs
-	eA = sum(e)/Ne
+		cs_intel = sum(cs_students)/num_cs
+		econ_intel = sum(econ_students)/num_econ
 
-	i = 0
-	for c in cs:
-		if eA < c < csA:
-			i += 1
-	print(i)
+		cs_students.sort()
+
+		total = 0
+		for student in cs_students:
+			if econ_intel < student < cs_intel:
+				total += 1
+		print(total)
+
+main()
