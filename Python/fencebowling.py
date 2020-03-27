@@ -20,8 +20,6 @@ Explanation of the math:
 	X_n will either be w/2 (for n = 0,k) or w (for n from 1 to k-1)
 	
 	Let the variable C = the sum of these widths
-	C = w * ( 1/2 + sum(2^n for n in range(1,k)) + 2^(k-1))
-	(k-1 is repeated because the 2^k term will be divided by 2)
 
 	Thus: L = C * tan(A_0)
 
@@ -35,6 +33,7 @@ def main():
 	k,w,L = map(int,input().split())
 
 	C = w * ( .5 + sum(2**n for n in range(1,k)) + 2**(k-1) )
+	# k-1 is repeated because 2**k is divided by 2
 
 	beta = atan(L/C)/pi*180 # Must be converted to degrees
 
