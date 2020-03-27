@@ -32,11 +32,11 @@ Explanation of the math:
 '''
 
 def main():
-	k,w,l = map(int,input().split())
+	k,w,L = map(int,input().split())
 
-	coeffs = .5 + sum(2**k for k in range(1,k)) + 2**(k-1)
+	C = w * ( .5 + sum(2**n for n in range(1,k)) + 2**(k-1) )
 
-	beta = atan(l/w/coeffs)/pi*180 # Must be converted to degrees
+	beta = atan(L/C)/pi*180 # Must be converted to degrees
 
 	if k:
 		print(beta)
