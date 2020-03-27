@@ -17,7 +17,7 @@ Explanation of the math:
 	Since tan(A_n) = Y_n/X_n: Y_n = X_n * tan(A_n)
 	Using the general form: Y_n = X_n * 2^n * tan(A_0)
 
-	A_x will either be w/2 (for n = 0,k) or w (for n from 1 to k-1)
+	X_n will either be w/2 (for n = 0,k) or w (for n from 1 to k-1)
 	
 	Let the variable C = the sum of these widths
 	C = w * ( 1/2 + sum(2^n for n in range(1,k)) + 2^(k-1))
