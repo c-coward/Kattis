@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -8,8 +7,8 @@ public class KattissQuest {
 		Scanner in = new Scanner(System.in);
 		TreeMap<Integer, PriorityQueue<Integer>> questList = new TreeMap<>();
 
-		int cases = in.nextInt();
-		for (int i = 0; i < cases; i++) {
+		int c = in.nextInt();
+		for (int i = 0; i < c; i++) {
 			String command = in.next();
 			
 			if (command.equals("add")) {
