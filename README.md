@@ -1,3 +1,3 @@
 # Kattis
 Solutions to various kattis problems<br />
-Problem id should match filename
+Problem id should match file name
