@@ -33,4 +33,5 @@ def main():
 		else:
 			print("none")
 
-main()
+if __name__ == "__main__":
+	main()
